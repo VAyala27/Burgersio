@@ -1,6 +1,13 @@
+// NAVBAR
+const navbar = document.querySelector('.navbar');
+const toggle = document.querySelector('.toggle');
+
+toggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
+
 // STICKY NAV
 const header = document.querySelector('#header');
-
 window.addEventListener('scroll', () => {
     header.classList.toggle('sticky', window.scrollY > 100);
 })

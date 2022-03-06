@@ -127,31 +127,39 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    
     align-items: center;
     padding: 1rem 0;
     z-index: 10;
     transition: 0.3s ease-in-out;
     background: transparent;
 
-    .nav-container{
+    .navbar{
+        padding: .2rem;
+        height: 0rem;
+        min-height: 10vh;
+        overflow: hidden;
+        transition: height 1s ease-in-out;
+        max-width: 1300px;
+        margin: 0 auto;
+    .nav-menu{
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
-        width: 100%;
-        flex-wrap: wrap;
 
-        #navbar-toggle{
-            display: none;
+        .navbar-brand{
+            #logo{
+                color: #fff;
+                font-size: 36px;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+            }
         }
 
-        #logo{
-            color: #fff;
-            font-size: 36px;
-            transition: 0.3s ease-in-out;
-            cursor: pointer;
+        .toggle{
+            display: none;
         }
 
         .nav-list{
@@ -181,6 +189,7 @@ header{
             }
         }
     }
+}
 }
 
 .hero{
@@ -1226,33 +1235,42 @@ header{
     header{
         background: #fff;
         justify-content: space-around;
-    .toggler{
-        display: block !important;
-        font-size: 18px;
-        position: absolute;
-        right: 25%
-    }
 
-    #logo{
-        color: #1b1b1b !important;
-        font-size: 22px !important;
-    }
-    
-    .nav-list{
-        display: none !important;
-        li{
-            display: inline-block;
-            width: 100%;
-            text-align: center;
-            color: #1b1b1b !important;
-            &:hover{
-                background: #f7be27;
+        .navbar{
+            min-height: 5vh;
+            &.active{
+                height: 25rem;
             }
-            a{
-                color: #1b1b1b !important;
-                display: block;
-                text-align: center;
+            .nav-menu{
+                .navbar-brand{
+                    #logo{
+                        color: #1b1b1b !important;
+                        font-size: 22px !important;
+                    }
+                }
             }
+            .toggle{
+                display: block !important;
+                font-size: 18px;
+            }
+            
+            .nav-list{
+                margin-top: 15px;
+                flex-direction: column;
+                width: 100%;
+                li{
+                    width: 100%;
+                    text-align: center;
+                    color: #1b1b1b !important;
+                    &:hover{
+                        background: #f7be27;
+                    }
+                    a{
+                        color: #1b1b1b !important;
+                        display: block;
+                        text-align: center;
+                    }
+                }
         }
     }
 }

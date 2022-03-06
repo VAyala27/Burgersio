@@ -124,9 +124,6 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
   z-index: 10;
@@ -134,32 +131,42 @@ header {
   background: transparent;
 }
 
-header .nav-container {
+header .navbar {
+  padding: .2rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header .navbar .nav-menu {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
-  flex-wrap: wrap;
 }
 
-header .nav-container #navbar-toggle {
-  display: none;
-}
-
-header .nav-container #logo {
+header .navbar .nav-menu .navbar-brand #logo {
   color: #fff;
   font-size: 36px;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
-header .nav-container .nav-list {
+header .navbar .nav-menu .toggle {
+  display: none;
+}
+
+header .navbar .nav-menu .nav-list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-header .nav-container .nav-list .nav-item {
+header .navbar .nav-menu .nav-list .nav-item {
   padding: 1rem;
   cursor: pointer;
   color: #fff;
@@ -167,17 +174,17 @@ header .nav-container .nav-list .nav-item {
   font-size: 18px;
 }
 
-header .nav-container .nav-list .nav-item:hover {
+header .navbar .nav-menu .nav-list .nav-item:hover {
   color: #1b1b1b;
 }
 
-header .nav-container .nav-list .nav-item .nav-link {
+header .navbar .nav-menu .nav-list .nav-item .nav-link {
   color: #fff;
   transition: .3s ease-in-out;
   font-size: 18px;
 }
 
-header .nav-container .nav-list .nav-item .nav-link:hover {
+header .navbar .nav-menu .nav-list .nav-item .nav-link:hover {
   color: #1b1b1b;
 }
 
@@ -1215,29 +1222,34 @@ header .nav-container .nav-list .nav-item .nav-link:hover {
     background: #fff;
     justify-content: space-around;
   }
-  header .toggler {
-    display: block !important;
-    font-size: 18px;
-    position: absolute;
-    right: 25%;
+  header .navbar {
+    min-height: 5vh;
   }
-  header #logo {
+  header .navbar.active {
+    height: 25rem;
+  }
+  header .navbar .nav-menu .navbar-brand #logo {
     color: #1b1b1b !important;
     font-size: 22px !important;
   }
-  header .nav-list {
-    display: none !important;
+  header .navbar .toggle {
+    display: block !important;
+    font-size: 18px;
   }
-  header .nav-list li {
-    display: inline-block;
+  header .navbar .nav-list {
+    margin-top: 15px;
+    flex-direction: column;
+    width: 100%;
+  }
+  header .navbar .nav-list li {
     width: 100%;
     text-align: center;
     color: #1b1b1b !important;
   }
-  header .nav-list li:hover {
+  header .navbar .nav-list li:hover {
     background: #f7be27;
   }
-  header .nav-list li a {
+  header .navbar .nav-list li a {
     color: #1b1b1b !important;
     display: block;
     text-align: center;
