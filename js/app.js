@@ -228,3 +228,8 @@ $(document).ready(function () {
         }
     })
 });
+
+// date
+const year = document.querySelector('#year');
+const date = new Date();
+year.innerHTML = date.getFullYear();
