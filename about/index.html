@@ -7,35 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>About | Burgersio</title>
 </head>
 
 <body>
-    <header id="header">
-        <nav class="navbar">
-            <div class="nav-menu">
-                <div class="navbar-brand">
-                    <a href="../index.html" id="logo">Burgersio</a>
-                </div>
-                <div class="toggle">
-                    <span id="navbar-toggle" class="toggler">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" id="logo" href="#">Burgersio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item active"><a href="/about" class="nav-link">About<span
+                                class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a href="/menu" class="nav-link">Menu</a></li>
                     <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
-                    <li class="nav-item order-btn">Order</a></li>
-                    <li class="nav-item reservation-btn">Reservation</a></li>
+                    <li class="nav-item order-btn ml-3"><button class="btn" type="button">Order</button></li>
+                    <li class="nav-item reservation-btn ml-3"><button class="btn" type="button">Reservation</button>
+                    </li>
                 </ul>
             </div>
-        </nav>
-    </header>
-
+        </div>
+    </nav>
     <section class="hero-header">
         <div class="container">
             <div class="hero-content">
@@ -50,11 +53,11 @@
 
     <section class="about-us">
         <div class="container">
-            <div class="about-container">
-                <div class="about-img">
+            <div class="row">
+                <div class="col-md-6 about-img">
                     <img src="/img/bg.jpeg" class="img-fluid" alt="">
                 </div>
-                <div class="about-descrption">
+                <div class="col-md-6 about-descrption">
                     <h3>Our <span>Story</span></h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem iusto nesciunt cumque, velit
                         labore quasi nihil quibusdam soluta. Obcaecati quibusdam pariatur veniam et repudiandae
@@ -69,30 +72,29 @@
     <section class="team">
         <div class="container">
             <h1 id="team-heading">Our <span>Team</span></h1>
-            <div class="crew-members">
-
-                <div class="crew-member">
+            <div class="row justify-content-center">
+                <div class="col-md-2 crew-member mr-3">
                     <div class="crew-member-img">
                         <img class="img-fluid" src="/img/crew-1.png" alt="">
                     </div>
                     <div class="member-descrption">
                         <h3>John Smith</h3>
                         <p>Chef</p>
-                        <div class="social-media">
+                        <div class="d-flex align-items-center justify-content-around social-media pb-4">
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         </div>
                     </div>
                 </div>
-                <div class="crew-member">
+                <div class="col-md-2 crew-member mr-3">
                     <div class="crew-member-img">
                         <img class="img-fluid" src="/img/crew-2.png" alt="">
                     </div>
                     <div class="member-descrption">
                         <h3>Jane Smith</h3>
                         <p>Assistant Chef</p>
-                        <div class="social-media">
+                        <div class="d-flex align-items-center justify-content-around social-media pb-4">
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -100,14 +102,14 @@
                     </div>
                 </div>
 
-                <div class="crew-member">
+                <div class="col-md-2 crew-member mr-3">
                     <div class="crew-member-img">
                         <img class="img-fluid" src="/img/crew-3.png" alt="">
                     </div>
                     <div class="member-descrption">
                         <h3>John Doe</h3>
                         <p>Chef</p>
-                        <div class="social-media">
+                        <div class="d-flex align-items-center justify-content-around social-media pb-4">
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -115,14 +117,14 @@
                     </div>
                 </div>
 
-                <div class="crew-member">
+                <div class="col-md-2 crew-member mr-3">
                     <div class="crew-member-img">
                         <img class="img-fluid" src="/img/crew-4.png" alt="">
                     </div>
                     <div class="member-descrption">
                         <h3>Paul Smith</h3>
                         <p>Assistant Chef</p>
-                        <div class="social-media">
+                        <div class="d-flex align-items-center justify-content-around social-media pb-4">
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -132,19 +134,22 @@
 
             </div>
         </div>
-        </div>
     </section>
 
     <section id="footer">
         <div class="container">
-            <h3>Newsletter</h3>
-            <div class="newsletter">
-                <input type="email" name="" id="" placeholder="Enter Your Email...">
-                <input type="submit" class="red-btn" value="Submit">
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <h3>Newsletter</h3>
+                    <div class="newsletter">
+                        <input type="email" class="form-control" name="" id="" placeholder="Enter Your Email...">
+                        <input type="submit" class="btn btn-danger" value="Submit">
+                    </div>
+                </div>
             </div>
 
-            <div class="footer-navigation">
-                <div class="footer-nav-list">
+            <div class="row">
+                <div class="col-md-3 footer-nav-list">
                     <h4>Our Menu</h4>
                     <ul>
                         <li><a href="#">Burgers</a></li>
@@ -152,7 +157,7 @@
                         <li><a href="#">Drinks</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav-list">
+                <div class=" col-md-3 footer-nav-list">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -162,7 +167,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav-list">
+                <div class="col-md-3 footer-nav-list">
                     <h4>Extra Links</h4>
                     <ul>
                         <li><a href="#">My Order</a></li>
@@ -171,7 +176,7 @@
                         <li><a href="#">Private Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav-list">
+                <div class="col-md-3 footer-nav-list">
                     <h4>Opening Hours</h4>
                     <ul>
                         <li>Monday: 7:00am To 10:00pm</li>

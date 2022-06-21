@@ -1,15 +1,22 @@
-// NAVBAR
-const navbar = document.querySelector('.navbar');
-const toggle = document.querySelector('.toggle');
+// // STICKY NAV
+// const header = document.querySelector('#header');
+// window.addEventListener('scroll', () => {
+//     header.classList.toggle('sticky', window.scrollY > 100);
+// })
 
-toggle.addEventListener('click', () => {
-    navbar.classList.toggle('active');
-});
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > $(window).height()) {
+            $(".navbar").css({
+                "background-color": "transparent"
+            });
+        } else {
+            $(".navbar").css({
+                "background-color": "white"
+            });
+        }
 
-// STICKY NAV
-const header = document.querySelector('#header');
-window.addEventListener('scroll', () => {
-    header.classList.toggle('sticky', window.scrollY > 100);
+    })
 })
 
 // MODAL RESERVATION

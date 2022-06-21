@@ -8,33 +8,37 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Menu | Burgersio</title>
 </head>
 
 <body>
-    <header id="header">
-        <nav class="navbar">
-            <div class="nav-menu">
-                <div class="navbar-brand">
-                    <a href="../index.html" id="logo">Burgersio</a>
-                </div>
-                <div class="toggle">
-                    <span id="navbar-toggle" class="toggler">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" id="logo" href="#">Burgersio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
                     <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="/menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item active"><a href="/menu" class="nav-link">Menu <span
+                                class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
-                    <li class="nav-item order-btn">Order</a></li>
-                    <li class="nav-item reservation-btn">Reservation</a></li>
+                    <li class="nav-item order-btn ml-3"><button class="btn" type="button">Order</button></li>
+                    <li class="nav-item reservation-btn ml-3"><button class="btn" type="button">Reservation</button>
+                    </li>
                 </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <section class="hero-header">
         <div class="container">
@@ -50,50 +54,50 @@
 
     <div class="menu-container">
         <div class="container">
-            <div class="menu">
-                <ul class="menu-list">
+            <div class="menu pt-5 mx-auto">
+                <ul class="menu-list d-flex justify-content-center align-items-center">
                     <li data-id="burger" class="menu-category active">Burger</li>
                     <li data-id="sides" class="menu-category">Sides</li>
                     <li data-id="drinks" class="menu-category">Drinks</li>
                 </ul>
 
                 <div class="menu-items-container active" id="burger">
-                    <div class="card-container">
-                        <div class="card">
+                    <div class="row card-container justify-content-center">
+                        <div class="col-md-2 mr-4 card p-0">
                             <div class="card-img">
                                 <img src="/img/burger-11.jpeg" class="img-fluid" alt="">
                             </div>
-                            <div class="card-descrption">
+                            <div class="card-descrption p-4">
                                 <h3>Crispy Chicken</h3>
                                 <p>Chicken breast, chilli sauce, tomatoes, pickles, coleslaw</p>
                                 <span class="price">$8.99</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="col-md-2 mr-4 card p-0">
                             <div class="card-img">
                                 <img src="/img/bacon-burger.jpeg" class="img-fluid" alt="">
                             </div>
-                            <div class="card-descrption">
+                            <div class="card-descrption p-4">
                                 <h3>Bacon Burger</h3>
                                 <p>House beef patty, cheddar cheese, bacon, onion, mustard</p>
                                 <span class="price">$9.99</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="col-md-2 mr-4 card p-0">
                             <div class="card-img">
                                 <img src="/img/double-burger.jpeg" class="img-fluid" alt="">
                             </div>
-                            <div class="card-descrption">
+                            <div class="card-descrption p-4">
                                 <h3>Double Burger</h3>
                                 <p>2 beef patties, cheddar cheese, mustard, pickles, tomatoes</p>
                                 <span class="price">$7.99</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="col-md-2 mr-4 card p-0">
                             <div class="card-img">
                                 <img src="/img/classic-burger.jpeg" class="img-fluid" alt="">
                             </div>
-                            <div class="card-descrption">
+                            <div class="card-descrption p-4">
                                 <h3>Classic Burger</h3>
                                 <p>Beef, cheddar cheese, ketchup, mustard, pickles, onion</p>
                                 <span class="price">$5.99</span>
@@ -103,42 +107,42 @@
                 </div>
 
                 <div class="menu-items-container" id="sides">
-                    <div class="card-container">
-                        <div class="card">
+                    <div class="row card-container justify-content-center">
+                        <div class="col-md-2 mr-4 card p-0">
                             <div class="card-img">
                                 <img src="/img/side-01.png" class="img-fluid" alt="">
                             </div>
-                            <div class="card-descrption">
+                            <div class="card-descrption p-4">
                                 <h3>Onion Rings</h3>
                                 <p>Integer ultrice an aligula lectus purus magna and tempor</p>
                                 <span class="price">$1.75</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="col-md-2 mr-4 card p-0">
                             <div class="card-img">
                                 <img src="/img/side-02.png" class="img-fluid" alt="">
                             </div>
-                            <div class="card-descrption">
+                            <div class="card-descrption p-4">
                                 <h3>French Fries</h3>
                                 <p>Integer ultrice an aligula lectus purus magna and tempor</p>
                                 <span class="price">$1.75</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="col-md-2 mr-4 card p-0">
                             <div class="card-img">
                                 <img src="/img/side-05.png" class="img-fluid" alt="">
                             </div>
-                            <div class="card-descrption">
+                            <div class="card-descrption p-4">
                                 <h3>Chicken Nuggets</h3>
                                 <p>Integer ultrice an aligula lectus purus magna and tempor</p>
                                 <span class="price">$1.99</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="col-md-2 mr-4 card p-0">
                             <div class="card-img">
                                 <img src="/img/side-03.png" class="img-fluid" alt="">
                             </div>
-                            <div class="card-descrption">
+                            <div class="card-descrption p-4">
                                 <h3>MOZZARELLA STICKS</h3>
                                 <p>Integer ultrice an aligula lectus purus magna and tempor</p>
                                 <span class="price">$2.99</span>
@@ -149,42 +153,42 @@
 
                 <div class="menu-items-container" id="drinks">
 
-                    <div class="card-container">
-                        <div class="card">
+                    <div class="row card-container justify-content-center">
+                        <div class="col-md-2 mr-4 card p-0">
                             <div class="card-img">
                                 <img src="/img/16-1.png" class="img-fluid" alt="">
                             </div>
-                            <div class="card-descrption">
+                            <div class="card-descrption p-4">
                                 <h3>Orange Juice</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                                 <span class="price">$1.99</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="col-md-2 mr-4 card p-0">
                             <div class="card-img">
                                 <img src="/img/22-1.png" class="img-fluid" alt="">
                             </div>
-                            <div class="card-descrption">
+                            <div class="card-descrption p-4">
                                 <h3>Iced Cola</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                                 <span class="price">$1.99</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="col-md-2 mr-4 card p-0">
                             <div class="card-img">
                                 <img src="/img/24-1.png" class="img-fluid" alt="">
                             </div>
-                            <div class="card-descrption">
+                            <div class="card-descrption p-4">
                                 <h3>Iced Tea</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                                 <span class="price">$1.99</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="col-md-2 mr-4 card p-0">
                             <div class="card-img">
                                 <img src="/img/50-1.png" class="img-fluid" alt="">
                             </div>
-                            <div class="card-descrption">
+                            <div class="card-descrption p-4">
                                 <h3>Trio Cafe</h3>
                                 <p>Trio Cafe is Family owned in Boston Waterfront.</p>
                                 <span class="price">$2.99</span>
@@ -199,14 +203,18 @@
 
     <section id="footer">
         <div class="container">
-            <h3>Newsletter</h3>
-            <div class="newsletter">
-                <input type="email" name="" id="" placeholder="Enter Your Email...">
-                <input type="submit" class="red-btn" value="Submit">
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <h3>Newsletter</h3>
+                    <div class="newsletter">
+                        <input type="email" class="form-control" name="" id="" placeholder="Enter Your Email...">
+                        <input type="submit" class="btn btn-danger" value="Submit">
+                    </div>
+                </div>
             </div>
 
-            <div class="footer-navigation">
-                <div class="footer-nav-list">
+            <div class="row">
+                <div class="col-md-3 footer-nav-list">
                     <h4>Our Menu</h4>
                     <ul>
                         <li><a href="#">Burgers</a></li>
@@ -214,7 +222,7 @@
                         <li><a href="#">Drinks</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav-list">
+                <div class=" col-md-3 footer-nav-list">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -224,7 +232,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav-list">
+                <div class="col-md-3 footer-nav-list">
                     <h4>Extra Links</h4>
                     <ul>
                         <li><a href="#">My Order</a></li>
@@ -233,7 +241,7 @@
                         <li><a href="#">Private Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav-list">
+                <div class="col-md-3 footer-nav-list">
                     <h4>Opening Hours</h4>
                     <ul>
                         <li>Monday: 7:00am To 10:00pm</li>
@@ -248,7 +256,6 @@
             <p>© Victor Ayala <span id="year"></span></p>
         </div>
     </section>
-
 
 
 

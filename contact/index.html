@@ -8,33 +8,37 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Contact | Burgersio</title>
 </head>
 
 <body>
-    <header id="header">
-        <nav class="navbar">
-            <div class="nav-menu">
-                <div class="navbar-brand">
-                    <a href="../index.html" id="logo">Burgersio</a>
-                </div>
-                <div class="toggle">
-                    <span id="navbar-toggle" class="toggler">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" id="logo" href="#">Burgersio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
                     <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="/menu" class="nav-link">Menu</a></li>
-                    <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
-                    <li class="nav-item order-btn">Order</a></li>
-                    <li class="nav-item reservation-btn">Reservation</a></li>
+                    <li class="nav-item active"><a href="/contact" class="nav-link">Contact <span
+                                class="sr-only">(current)</span></a></li>
+                    <li class="nav-item order-btn ml-3"><button class="btn" type="button">Order</button></li>
+                    <li class="nav-item reservation-btn ml-3"><button class="btn" type="button">Reservation</button>
+                    </li>
                 </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <section class="hero-header">
         <div class="container">
@@ -50,21 +54,23 @@
 
     <section class="contact">
         <div class="container">
-            <div class="contact-container">
-                <div class="contact-info">
+            <div class="row">
+                <div class="col-md-6 contact-info">
                     <h2>Get In Touch</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quidem blanditiis, obcaecati unde
                         voluptatum iure voluptatem animi numquam? Placeat, in!</p>
                     <form action="">
-                        <input type="text" name="name" id="name" placeholder="Your Name">
-                        <input type="email" name="email" id="email" placeholder="Email Address">
-                        <input type="text" name="subject" id="subject" placeholder="Subject">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                        <input type="submit" value="Send" class="red-btn">
+                        <input class="form-control mb-3" type="text" name="name" id="name" placeholder="Your Name">
+                        <input class="form-control mb-3" type="email" name="email" id="email"
+                            placeholder="Email Address">
+                        <input class="form-control mb-3" type="text" name="subject" id="subject" placeholder="Subject">
+                        <textarea class="form-control mb-3" name="message" id="message" cols="30" rows="8"
+                            placeholder="Message"></textarea>
+                        <input class="btn btn-dark" type="submit" value="Send" class="red-btn">
                     </form>
                 </div>
 
-                <div class="map">
+                <div class="col-md-6 map">
                     <iframe class="map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d66946.8725570603!2d26.66250549673379!3d58.37502295034754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb36d8d55d3df7%3A0x400b36d18fc6d10!2sTartu%2C%20Estonia!5e0!3m2!1sen!2sus!4v1640723241038!5m2!1sen!2sus"
                         allowfullscreen="" loading="lazy"></iframe>
@@ -75,14 +81,18 @@
 
     <section id="footer">
         <div class="container">
-            <h3>Newsletter</h3>
-            <div class="newsletter">
-                <input type="email" name="" id="" placeholder="Enter Your Email...">
-                <input type="submit" class="red-btn" value="Submit">
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <h3>Newsletter</h3>
+                    <div class="newsletter">
+                        <input type="email" class="form-control" name="" id="" placeholder="Enter Your Email...">
+                        <input type="submit" class="btn btn-danger" value="Submit">
+                    </div>
+                </div>
             </div>
 
-            <div class="footer-navigation">
-                <div class="footer-nav-list">
+            <div class="row">
+                <div class="col-md-3 footer-nav-list">
                     <h4>Our Menu</h4>
                     <ul>
                         <li><a href="#">Burgers</a></li>
@@ -90,7 +100,7 @@
                         <li><a href="#">Drinks</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav-list">
+                <div class=" col-md-3 footer-nav-list">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -100,7 +110,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav-list">
+                <div class="col-md-3 footer-nav-list">
                     <h4>Extra Links</h4>
                     <ul>
                         <li><a href="#">My Order</a></li>
@@ -109,7 +119,7 @@
                         <li><a href="#">Private Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav-list">
+                <div class="col-md-3 footer-nav-list">
                     <h4>Opening Hours</h4>
                     <ul>
                         <li>Monday: 7:00am To 10:00pm</li>
