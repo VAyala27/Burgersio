@@ -1,0 +1,66 @@
+@media (max-width: 1368px) and (min-width: 912px) and (orientation: landscape) {
+    .navbar {
+        background: #fff;
+
+        .navbar-brand {
+            color: #ed4852;
+            font-size: 26px !important;
+        }
+
+        .nav-link {
+            color: #000 !important;
+        }
+
+        .nav-link:hover {
+            color: #131313 !important;
+        }
+
+        .navbar-nav {
+            align-items: center;
+        }
+    }
+
+    .hero {
+        .hero-img {
+            margin-top: 15% !important;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        background: #fff;
+
+        .navbar-brand {
+            color: #ed4852;
+            font-size: 26px !important;
+        }
+
+        .nav-link {
+            color: #000 !important;
+        }
+
+        .nav-link:hover {
+            color: #131313 !important;
+        }
+
+        .btn {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .hero {
+        .hero-img {
+            margin-top: 15% !important;
+            margin-bottom: 3rem;
+
+        }
+    }
+}
+
+// @media only screen and (min-width: 768px) {
+
+//     .navbar {
+//         background: #fff;
+//     }
+// }

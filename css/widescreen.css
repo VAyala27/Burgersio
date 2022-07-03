@@ -1,0 +1,45 @@
+@media (max-width: 1368px) and (min-width: 912px) and (orientation: landscape) {
+  .navbar {
+    background: #fff;
+  }
+  .navbar .navbar-brand {
+    color: #ed4852;
+    font-size: 26px !important;
+  }
+  .navbar .nav-link {
+    color: #000 !important;
+  }
+  .navbar .nav-link:hover {
+    color: #131313 !important;
+  }
+  .navbar .navbar-nav {
+    align-items: center;
+  }
+  .hero .hero-img {
+    margin-top: 15% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    background: #fff;
+  }
+  .navbar .navbar-brand {
+    color: #ed4852;
+    font-size: 26px !important;
+  }
+  .navbar .nav-link {
+    color: #000 !important;
+  }
+  .navbar .nav-link:hover {
+    color: #131313 !important;
+  }
+  .navbar .btn {
+    margin-bottom: 1rem;
+  }
+  .hero .hero-img {
+    margin-top: 15% !important;
+    margin-bottom: 3rem;
+  }
+}
+/*# sourceMappingURL=widescreen.css.map */

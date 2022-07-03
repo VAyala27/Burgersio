@@ -1,0 +1,169 @@
+@media screen and (max-width: 750px) {
+  .navbar {
+    background: #fff !important;
+  }
+  .navbar .navbar-brand {
+    color: #ed4852;
+    font-size: 26px !important;
+  }
+  .navbar .nav-link {
+    color: #000 !important;
+  }
+  .navbar .nav-link:hover {
+    color: #131313 !important;
+  }
+  .navbar .btn {
+    margin-bottom: 1rem;
+  }
+  .hero {
+    height: 100%;
+  }
+  .hero .hero-img {
+    margin-top: 22% !important;
+  }
+  .hero .hero-descprtion {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+  .hero .hero-descprtion h1 {
+    font-size: 2.3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .hero .hero-descprtion p {
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: .5px;
+  }
+  .popular-dishes h2 {
+    font-size: 1.7rem;
+  }
+  .popular-dishes .dish-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .popular-dishes .dish-container .dish .dish-content h3 {
+    font-size: 20px;
+  }
+  .popular-dishes .dish-container .dish .dish-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: .5px;
+  }
+  #deals .deal-row {
+    height: 20rem;
+  }
+  #deals .deal-row .deal-content span {
+    font-size: 24px !important;
+  }
+  #deals .deal-row .deal-content h3 {
+    font-size: 2.5rem;
+  }
+  #deals .deal-row .deal-content p {
+    font-size: 1rem;
+  }
+  #deals .deal-row .deal-content .red-btn {
+    padding: 5px 9px;
+  }
+  #deals .deals-container {
+    grid-template-columns: 1fr;
+  }
+  #deals .deals-container .deal-2 {
+    order: 2;
+  }
+  #deals .deals-container .deal-2 .deal-content span {
+    font-size: 18px;
+  }
+  #deals .deals-container .deal-2 .deal-content h3 {
+    font-size: 22px;
+  }
+  #deals .deals-container .deal-2 .deal-content .red-btn {
+    font-size: 20px;
+  }
+  #deals .deals-container .deal-3 {
+    order: 1;
+  }
+  .download-app .download-container {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    gap: 5rem;
+  }
+  .download-app .download-container .download-content h2 {
+    font-size: 24px;
+  }
+  .download-app .download-container .download-content p {
+    font-size: 16px;
+    line-height: 2;
+  }
+  .download-app .download-container .download-content .apps {
+    justify-content: center;
+  }
+  .download-app .download-container .download-content .apps img {
+    width: 175px;
+  }
+  #footer .footer-navigation {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  #footer .footer-navigation .footer-nav-list {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #footer .footer-navigation .footer-nav-list li {
+    font-size: 16px;
+  }
+  #footer .footer-navigation .footer-nav-list li a {
+    font-size: 16px;
+  }
+  .hero-header .hero-content h1 {
+    font-size: 3rem;
+  }
+  .about-us .about-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .about-us .about-container .about-descrption {
+    width: 100%;
+  }
+  .about-us .about-container .about-descrption h3 {
+    font-size: 40px;
+  }
+  .about-us .about-container .about-descrption p {
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: .2px;
+  }
+  .team {
+    text-align: center;
+  }
+  .team #team-heading {
+    font-size: 40px;
+  }
+  .team .crew-members {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .menu-container .menu .menu-list {
+    width: 100%;
+  }
+  .menu-container .menu .menu-list li {
+    font-size: 16px;
+  }
+  .menu-container .menu .card .card-descrption h3 {
+    font-size: 20px;
+  }
+  .menu-container .menu .card .card-descrption p {
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: .5px;
+  }
+  .contact .contact-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contact .contact-container .contact-info h2 {
+    margin-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

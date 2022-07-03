@@ -30,7 +30,7 @@
       href="/css/mobile.css"
     />
     <link rel="stylesheet" href="/css/widescreen.css" />
-    <title>Menu | Burgersio</title>
+    <title>Burgersio</title>
   </head>
 
   <body>
@@ -52,7 +52,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item active">
-              <a href="/home" class="nav-link">
+              <a href="/home" class="nav-link active">
                 Home
                 <span class="sr-only">(current)</span>
               </a>
@@ -60,9 +60,7 @@
             <li class="nav-item">
               <a href="/about" class="nav-link">About</a>
             </li>
-            <li class="nav-item">
-              <a href="/menu" class="nav-link active">Menu</a>
-            </li>
+            <li class="nav-item"><a href="/menu" class="nav-link">Menu</a></li>
             <li class="nav-item">
               <a href="/contact" class="nav-link">Contact</a>
             </li>
@@ -91,232 +89,181 @@
       </div>
     </nav>
 
-    <section class="hero-header">
+    <div class="hero">
       <div class="container">
-        <div class="hero-content">
-          <h1>Menu</h1>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb justify-content-center">
-              <li class="breadcrumb-item"><a href="/home">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Menu</li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-    </section>
-
-    <div class="menu-container">
-      <div class="container">
-        <div class="menu pt-5 mx-auto">
-          <ul
-            class="menu-list d-flex justify-content-center align-items-center"
-          >
-            <li data-id="burger" class="menu-category active">Burger</li>
-            <li data-id="sides" class="menu-category">Sides</li>
-            <li data-id="drinks" class="menu-category">Drinks</li>
-          </ul>
-
-          <div class="menu-items-container active gx-2" id="burger">
-            <div
-              class="row card-container justify-content-center align-items-center mx-auto"
-            >
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card">
-                  <div class="card-img">
-                    <img src="/img/burger-11.jpeg" class="img-fluid" alt="" />
-                  </div>
-                  <div class="card-descrption p-4">
-                    <h3>Crispy Chicken</h3>
-                    <p>
-                      Chicken breast, chilli sauce, tomatoes, pickles, coleslaw
-                    </p>
-                    <span class="price">$8.99</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="/img/bacon-burger.jpeg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="card-descrption p-4">
-                    <h3>Bacon Burger</h3>
-                    <p>
-                      House beef patty, cheddar cheese, bacon, onion, mustard
-                    </p>
-                    <span class="price">$9.99</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="/img/double-burger.jpeg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="card-descrption p-4">
-                    <h3>Double Burger</h3>
-                    <p>
-                      2 beef patties, cheddar cheese, mustard, pickles, tomatoes
-                    </p>
-                    <span class="price">$7.99</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="/img/classic-burger.jpeg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="card-descrption p-4">
-                    <h3>Classic Burger</h3>
-                    <p>
-                      Beef, cheddar cheese, ketchup, mustard, pickles, onion
-                    </p>
-                    <span class="price">$5.99</span>
-                  </div>
-                </div>
-              </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12 gx-5">
+            <div class="hero-img">
+              <img
+                src="../img/burger-bg.png"
+                class="img-fluid burger bounce"
+                alt=""
+              />
             </div>
           </div>
-
-          <div class="menu-items-container" id="sides">
-            <div
-              class="row card-container justify-content-center align-items-center mx-auto"
-            >
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card">
-                  <div class="card-img">
-                    <img src="/img/side-01.png" class="img-fluid" alt="" />
-                  </div>
-                  <div class="card-descrption p-4">
-                    <h3>Onion Rings</h3>
-                    <p>
-                      Integer ultrice an aligula lectus purus magna and tempor
-                    </p>
-                    <span class="price">$1.75</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card">
-                  <div class="card-img">
-                    <img src="/img/side-02.png" class="img-fluid" alt="" />
-                  </div>
-                  <div class="card-descrption p-4">
-                    <h3>French Fries</h3>
-                    <p>
-                      Integer ultrice an aligula lectus purus magna and tempor
-                    </p>
-                    <span class="price">$1.75</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card">
-                  <div class="card-img">
-                    <img src="/img/side-05.png" class="img-fluid" alt="" />
-                  </div>
-                  <div class="card-descrption p-4">
-                    <h3>Chicken Nuggets</h3>
-                    <p>
-                      Integer ultrice an aligula lectus purus magna and tempor
-                    </p>
-                    <span class="price">$1.99</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card">
-                  <div class="card-img">
-                    <img src="/img/side-03.png" class="img-fluid" alt="" />
-                  </div>
-                  <div class="card-descrption p-4">
-                    <h3>MOZZARELLA STICKS</h3>
-                    <p>
-                      Integer ultrice an aligula lectus purus magna and tempor
-                    </p>
-                    <span class="price">$2.99</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="menu-items-container" id="drinks">
-            <div
-              class="row card-container justify-content-center align-items-center mx-auto"
-            >
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card">
-                  <div class="card-img">
-                    <img src="/img/16-1.png" class="img-fluid" alt="" />
-                  </div>
-                  <div class="card-descrption p-4">
-                    <h3>Orange Juice</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                    <span class="price">$1.99</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card">
-                  <div class="card-img">
-                    <img src="/img/22-1.png" class="img-fluid" alt="" />
-                  </div>
-                  <div class="card-descrption p-4">
-                    <h3>Iced Cola</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <span class="price">$1.99</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card">
-                  <div class="card-img">
-                    <img src="/img/24-1.png" class="img-fluid" alt="" />
-                  </div>
-                  <div class="card-descrption p-4">
-                    <h3>Iced Tea</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <span class="price">$1.99</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card">
-                  <div class="card-img">
-                    <img src="/img/50-1.png" class="img-fluid" alt="" />
-                  </div>
-                  <div class="card-descrption p-4">
-                    <h3>Trio Cafe</h3>
-                    <p>Trio Cafe is Family owned in Boston Waterfront.</p>
-                    <span class="price">$2.99</span>
-                  </div>
-                </div>
-              </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 align-self-center gx-5">
+            <div class="hero-descprtion">
+              <h1>NEW BURGER</h1>
+              <p>
+                Feugiat primis ligula risus auctor laoreet augue egestas mauris
+                viverra tortor in iaculis pretium at magna mauris ipsum primis
+                rhoncus feugiat
+              </p>
+              <a href="/menu" class="btn btn-warning">Order Now</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <section class="popular-dishes">
+      <div class="container">
+        <h2>
+          Our Delicious
+          <span>Foods</span>
+        </h2>
+        <div class="row g-3 align-items-center justify-content-center">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="dish-img">
+                <img src="/img/classic-burger.jpeg" class="img-fluid" alt="" />
+              </div>
+
+              <div class="card-body">
+                <h3>Classic Burger</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae sunt dicta dolores totam laborum asperiores.
+                </p>
+                <p class="price">
+                  Price:
+                  <span class="cost">$5.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="dish-img">
+                <img src="/img/double-burger.jpeg" class="img-fluid" alt="" />
+              </div>
+              <div class="card-body">
+                <h3>Double Burger</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae sunt dicta dolores totam laborum asperiores.
+                </p>
+                <p class="price">
+                  Price:
+                  <span class="cost">$5.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="dish-img">
+                <img src="/img/bacon-burger.jpeg" class="img-fluid" alt="" />
+              </div>
+              <div class="card-body">
+                <h3>Bacon Burger</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae sunt dicta dolores totam laborum asperiores.
+                </p>
+                <p class="price">
+                  Price:
+                  <span class="cost">$5.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+          <a href="#" class="btn btn-warning">Explore Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="deals">
+      <div class="container">
+        <div class="deal-row">
+          <div class="deal-content">
+            <span>Double Chesse</span>
+            <h3>Burger</h3>
+            <p>With Cocacola And Fries</p>
+            <a href="#" class="btn btn-danger">Order Now</a>
+          </div>
+        </div>
+
+        <div class="deals-container">
+          <div class="deal deal-2">
+            <div class="deal-content">
+              <span>Speical Offer</span>
+              <h3>Upto 25% Extra</h3>
+              <a href="#" class="btn btn-danger">Order Now</a>
+            </div>
+            <div class="deal-img">
+              <img src="/img/banner-2.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="deal deal-3">
+            <div class="deal-img">
+              <img
+                src="/img/fried-chicken-ads-design-template-52e0ccf8a21992047c5465de8cdbde02_screen.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="deal deal-4">
+            <div class="deal-img">
+              <img
+                src="/img/free-best-creative-restaurant-banner-for-fast-food-delivery-promotion-banner-990x990.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="download-app">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="download-content">
+              <h2>Download our mobile app.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Distinctio minima optio eos, cupiditate incidunt repudiandae.
+              </p>
+              <div class="row mt-5">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <img src="../img/google-play.svg" alt="" />
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <img src="../img/app-store.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="download-img">
+              <img
+                src="../img/phones-with-bolt-food.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="footer">
       <div class="container">
@@ -848,7 +795,6 @@
       </div>
     </div>
   </body>
-
   <script
     src="http://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -864,5 +810,5 @@
     integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"
   ></script>
-  <script src="/js/app.js"></script>
+  <script src="../js/home.js"></script>
 </html>

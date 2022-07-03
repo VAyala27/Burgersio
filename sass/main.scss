@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Poppins:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
-
+@import 'variable';
 
 * {
     margin: 0;
@@ -10,7 +10,7 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 li {
@@ -21,68 +21,12 @@ section {
     padding: 50px 0;
 }
 
-.yellow-btn {
-    border: 1px solid #f7be27;
-    color: #1b1b1b;
-    background: #f7be27;
-    padding: 1rem 1.5rem;
-    transition: .3s ease-in-out;
-    cursor: pointer;
-
-    &:hover {
-        border: 1px solid #fff;
-        color: #fff;
-        background: transparent;
-    }
-}
-
-.red-btn {
-    border: 1px solid #ed4852;
-    color: #fff;
-    background: #ed4852;
-    padding: 1rem 1.5rem;
-    transition: .3s ease-in-out;
-    cursor: pointer;
-
-    &:hover {
-        border: 1px solid #1b1b1b;
-        color: #fff;
-        background: #1b1b1b;
-    }
-}
-
-
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-.sticky {
-    background: #fff;
-    color: #1b1b1b;
-}
 
 .text-danger {
     color: red;
     text-align: left;
     text-transform: capitalize;
 }
-
-.reservation-btn {
-    cursor: pointer;
-}
-
-header.sticky #logo,
-header.sticky ul li,
-header.sticky .toggler,
-header.sticky ul li a {
-    color: #1b1b1b !important;
-
-    &:hover {
-        color: #ed4852 !important;
-    }
-}
-
 
 @keyframes bounce {
     0% {
@@ -98,6 +42,7 @@ header.sticky ul li a {
     }
 }
 
+
 .navbar {
 
     .navbar-brand {
@@ -107,12 +52,7 @@ header.sticky ul li a {
         cursor: pointer;
     }
 
-    .toggle {
-        display: none;
-    }
-
     .nav-item {
-        cursor: pointer;
         color: #fff;
         transition: .3s ease-in-out;
         font-size: 18px;
@@ -135,17 +75,42 @@ header.sticky ul li a {
     }
 }
 
+
+.navbar.scrolled {
+    background: #fff !important;
+    transition: background 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.navbar.scrolled .navbar-brand {
+    transition: color 0.3s ease-in-out;
+    color: #ed4852 !important;
+}
+
+.navbar.scrolled .nav-link {
+    transition: color 0.3s ease-in-out;
+    color: $darkText !important;
+}
+
+.navbar.scrolled .nav-link:hover {
+    color: $darkText !important;
+}
+
+.text-red {
+    color: #ed4852;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
 // HERO
 .hero {
     background: #ed4852;
     background: radial-gradient(ellipse at center, #ed4852 0%, #9c1b24 100%);
     height: 100vh;
     width: 100%;
-    padding-top: 10%;
+    padding-top: 12%;
 
-    .container {
-        max-width: 1300px;
-    }
 
     .hero-img {
         flex: 90%;
@@ -177,10 +142,6 @@ header.sticky ul li a {
 // Popular dishes
 .popular-dishes {
     background: #faf7f2;
-
-    .container {
-        max-width: 1400px;
-    }
 
     h2 {
         text-align: center;
@@ -378,6 +339,10 @@ header.sticky ul li a {
         color: #ed4852;
     }
 
+    ul {
+        padding: 0;
+    }
+
     .newsletter {
         display: flex;
         align-items: center;
@@ -521,10 +486,6 @@ header.sticky ul li a {
 .team {
     background: #faf7f2;
 
-    .container {
-        max-width: 1500px;
-    }
-
     #team-heading {
         text-align: center;
         font-size: 48px;
@@ -589,10 +550,6 @@ header.sticky ul li a {
 
 .menu-container {
     background: #faf7f2;
-
-    .container {
-        max-width: 1500px;
-    }
 
     .menu-list {
         display: flex;
@@ -695,8 +652,12 @@ header.sticky ul li a {
 }
 
 #order {
+    &.inactive {
+        z-index: 1030 !important;
+    }
+
     .modal-lg {
-        max-width: 1000px;
+        max-width: 1300px !important;
     }
 
     .modal-header {
@@ -887,153 +848,9 @@ header.sticky ul li a {
     }
 }
 
-
-#login {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100vw;
-    padding: 0;
-    transition: 0.5s;
-    opacity: 0;
-    z-index: -1;
-
-    &.active {
-        opacity: 1;
-        z-index: 1000;
-    }
-
-    .login-container {
-        background: rgba(0, 0, 0, 0.8);
-        height: 100%;
-        overflow: auto;
-
-        .login-content {
-            background: #fff;
-            padding: 2.5rem;
-            border-radius: 16px;
-            margin: 5% auto;
-            width: 750px;
-            position: relative;
-            text-align: center;
-
-            .closeBtn3 {
-                position: absolute;
-                top: 20px;
-                right: 20px;
-                font-size: 36px;
-                cursor: pointer;
-            }
-
-            .login-header {
-                h3 {
-                    margin-top: 3rem;
-                    margin-bottom: 1rem;
-                    font-size: 36px;
-                }
-
-                p {
-                    margin-bottom: 1.5rem;
-                    line-height: 1.5;
-                    letter-spacing: .1px;
-
-                    span {
-                        color: #ed4852;
-                        cursor: pointer;
-                        text-transform: capitalize;
-                    }
-                }
-            }
-
-            .login-body {
-                input {
-                    margin-bottom: 1.5rem;
-                }
-
-                .red-btn {
-                    padding: 10px 35px;
-                    text-transform: capitalize;
-                    font-size: 16px;
-                }
-            }
-        }
-    }
-}
-
+#login,
 #sign-up {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100vw;
-    padding: 0;
-    transition: 0.4s;
-    opacity: 0;
-    z-index: -1;
-
-    &.active {
-        opacity: 1;
-        z-index: 100;
-    }
-
-    .sign-up-container {
-        background: rgba(0, 0, 0, 0.8);
-        height: 100%;
-        overflow: auto;
-
-        .sign-up-content {
-            background: #fff;
-            padding: 2.5rem;
-            border-radius: 16px;
-            margin: 5% auto;
-            width: 750px;
-            position: relative;
-            text-align: center;
-
-            .closeBtn4 {
-                position: absolute;
-                top: 20px;
-                right: 20px;
-                font-size: 36px;
-                cursor: pointer;
-            }
-
-            .sign-up-header {
-                h3 {
-                    margin-top: 3rem;
-                    margin-bottom: 1rem;
-                    font-size: 36px;
-                }
-
-                p {
-                    margin-bottom: 1.5rem;
-                    line-height: 1.5;
-                    letter-spacing: .1px;
-
-                    span {
-                        color: #ed4852;
-                        text-transform: capitalize;
-                        cursor: pointer;
-                    }
-                }
-            }
-
-            .sign-up-body {
-                input {
-                    margin-bottom: 1.5rem;
-                }
-
-                .red-btn {
-                    padding: 10px 35px;
-                    text-transform: capitalize;
-                    font-size: 16px;
-                }
-            }
-        }
+    .modal-header {
+        border: none !important;
     }
 }

@@ -8,7 +8,7 @@
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 li {
@@ -19,68 +19,10 @@ section {
   padding: 50px 0;
 }
 
-.yellow-btn {
-  border: 1px solid #f7be27;
-  color: #1b1b1b;
-  background: #f7be27;
-  padding: 1rem 1.5rem;
-  transition: .3s ease-in-out;
-  cursor: pointer;
-}
-
-.yellow-btn:hover {
-  border: 1px solid #fff;
-  color: #fff;
-  background: transparent;
-}
-
-.red-btn {
-  border: 1px solid #ed4852;
-  color: #fff;
-  background: #ed4852;
-  padding: 1rem 1.5rem;
-  transition: .3s ease-in-out;
-  cursor: pointer;
-}
-
-.red-btn:hover {
-  border: 1px solid #1b1b1b;
-  color: #fff;
-  background: #1b1b1b;
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
-.sticky {
-  background: #fff;
-  color: #1b1b1b;
-}
-
 .text-danger {
   color: red;
   text-align: left;
   text-transform: capitalize;
-}
-
-.reservation-btn {
-  cursor: pointer;
-}
-
-header.sticky #logo,
-header.sticky ul li,
-header.sticky .toggler,
-header.sticky ul li a {
-  color: #1b1b1b !important;
-}
-
-header.sticky #logo:hover,
-header.sticky ul li:hover,
-header.sticky .toggler:hover,
-header.sticky ul li a:hover {
-  color: #ed4852 !important;
 }
 
 @keyframes bounce {
@@ -102,12 +44,7 @@ header.sticky ul li a:hover {
   cursor: pointer;
 }
 
-.navbar .toggle {
-  display: none;
-}
-
 .navbar .nav-item {
-  cursor: pointer;
   color: #fff;
   transition: .3s ease-in-out;
   font-size: 18px;
@@ -129,16 +66,39 @@ header.sticky ul li a:hover {
   color: #1b1b1b;
 }
 
+.navbar.scrolled {
+  background: #fff !important;
+  transition: background 0.3s ease-in-out;
+  z-index: 1000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.navbar.scrolled .navbar-brand {
+  transition: color 0.3s ease-in-out;
+  color: #ed4852 !important;
+}
+
+.navbar.scrolled .nav-link {
+  transition: color 0.3s ease-in-out;
+  color: #1b1b1b !important;
+}
+
+.navbar.scrolled .nav-link:hover {
+  color: #1b1b1b !important;
+}
+
+.text-red {
+  color: #ed4852;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
 .hero {
   background: #ed4852;
   background: radial-gradient(ellipse at center, #ed4852 0%, #9c1b24 100%);
   height: 100vh;
   width: 100%;
-  padding-top: 10%;
-}
-
-.hero .container {
-  max-width: 1300px;
+  padding-top: 12%;
 }
 
 .hero .hero-img {
@@ -167,10 +127,6 @@ header.sticky ul li a:hover {
 
 .popular-dishes {
   background: #faf7f2;
-}
-
-.popular-dishes .container {
-  max-width: 1400px;
 }
 
 .popular-dishes h2 {
@@ -349,6 +305,10 @@ header.sticky ul li a:hover {
   color: #ed4852;
 }
 
+#footer ul {
+  padding: 0;
+}
+
 #footer .newsletter {
   display: flex;
   align-items: center;
@@ -484,10 +444,6 @@ header.sticky ul li a:hover {
   background: #faf7f2;
 }
 
-.team .container {
-  max-width: 1500px;
-}
-
 .team #team-heading {
   text-align: center;
   font-size: 48px;
@@ -547,10 +503,6 @@ header.sticky ul li a:hover {
 
 .menu-container {
   background: #faf7f2;
-}
-
-.menu-container .container {
-  max-width: 1500px;
 }
 
 .menu-container .menu-list {
@@ -644,8 +596,12 @@ header.sticky ul li a:hover {
   height: 75vh;
 }
 
+#order.inactive {
+  z-index: 1030 !important;
+}
+
 #order .modal-lg {
-  max-width: 1000px;
+  max-width: 1300px !important;
 }
 
 #order .modal-header {
@@ -833,145 +789,8 @@ header.sticky ul li a:hover {
   gap: 1rem;
 }
 
-#login {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  height: 100vh;
-  width: 100vw;
-  padding: 0;
-  transition: 0.5s;
-  opacity: 0;
-  z-index: -1;
-}
-
-#login.active {
-  opacity: 1;
-  z-index: 1000;
-}
-
-#login .login-container {
-  background: rgba(0, 0, 0, 0.8);
-  height: 100%;
-  overflow: auto;
-}
-
-#login .login-container .login-content {
-  background: #fff;
-  padding: 2.5rem;
-  border-radius: 16px;
-  margin: 5% auto;
-  width: 750px;
-  position: relative;
-  text-align: center;
-}
-
-#login .login-container .login-content .closeBtn3 {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 36px;
-  cursor: pointer;
-}
-
-#login .login-container .login-content .login-header h3 {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  font-size: 36px;
-}
-
-#login .login-container .login-content .login-header p {
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
-  letter-spacing: .1px;
-}
-
-#login .login-container .login-content .login-header p span {
-  color: #ed4852;
-  cursor: pointer;
-  text-transform: capitalize;
-}
-
-#login .login-container .login-content .login-body input {
-  margin-bottom: 1.5rem;
-}
-
-#login .login-container .login-content .login-body .red-btn {
-  padding: 10px 35px;
-  text-transform: capitalize;
-  font-size: 16px;
-}
-
-#sign-up {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  height: 100vh;
-  width: 100vw;
-  padding: 0;
-  transition: 0.4s;
-  opacity: 0;
-  z-index: -1;
-}
-
-#sign-up.active {
-  opacity: 1;
-  z-index: 100;
-}
-
-#sign-up .sign-up-container {
-  background: rgba(0, 0, 0, 0.8);
-  height: 100%;
-  overflow: auto;
-}
-
-#sign-up .sign-up-container .sign-up-content {
-  background: #fff;
-  padding: 2.5rem;
-  border-radius: 16px;
-  margin: 5% auto;
-  width: 750px;
-  position: relative;
-  text-align: center;
-}
-
-#sign-up .sign-up-container .sign-up-content .closeBtn4 {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 36px;
-  cursor: pointer;
-}
-
-#sign-up .sign-up-container .sign-up-content .sign-up-header h3 {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  font-size: 36px;
-}
-
-#sign-up .sign-up-container .sign-up-content .sign-up-header p {
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
-  letter-spacing: .1px;
-}
-
-#sign-up .sign-up-container .sign-up-content .sign-up-header p span {
-  color: #ed4852;
-  text-transform: capitalize;
-  cursor: pointer;
-}
-
-#sign-up .sign-up-container .sign-up-content .sign-up-body input {
-  margin-bottom: 1.5rem;
-}
-
-#sign-up .sign-up-container .sign-up-content .sign-up-body .red-btn {
-  padding: 10px 35px;
-  text-transform: capitalize;
-  font-size: 16px;
+#login .modal-header,
+#sign-up .modal-header {
+  border: none !important;
 }
 /*# sourceMappingURL=main.css.map */
