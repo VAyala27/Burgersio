@@ -91,11 +91,18 @@ section {
 .navbar.scrolled .nav-link {
     transition: color 0.3s ease-in-out;
     color: $darkText !important;
+
+    &:hover {
+        color: #ed4852 !important;
+    }
 }
 
-.navbar.scrolled .nav-link:hover {
-    color: $darkText !important;
+.navbar.scrolled .nav-link.active {
+    &.active {
+        color: #ed4852 !important;
+    }
 }
+
 
 .text-red {
     color: #ed4852;
@@ -330,6 +337,7 @@ section {
 // Footer
 #footer {
     background: #faf7f2;
+    padding-bottom: 0;
 
     h3 {
         text-align: center;
@@ -339,9 +347,6 @@ section {
         color: #ed4852;
     }
 
-    ul {
-        padding: 0;
-    }
 
     .newsletter {
         display: flex;
@@ -356,55 +361,8 @@ section {
         }
     }
 
-    .footer-navigation {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 3rem;
-
-        h4 {
-            font-size: 20px;
-            margin-bottom: .7rem;
-        }
-
-        li {
-            // font-size: 14px;
-            margin-bottom: .5rem;
-
-            a {
-                color: #495057;
-
-                &:hover {
-                    color: #ed4852;
-                }
-            }
-        }
-    }
-
-    p {
-        text-align: center;
-        font-size: 20px;
-    }
-}
-
-#footer {
-    background: #faf7f2;
-
-    h3 {
-        text-align: center;
-        font-weight: 700;
-        font-size: 32px;
-        margin-bottom: 1rem;
-        color: #ed4852;
-    }
-
-    .newsletter {
-        max-width: 600px;
-        margin: 0 auto;
-
-        .red-btn {
-            padding: 8px 25px;
-            border-radius: 5px;
-        }
+    ul {
+        padding: 0;
     }
 
     .footer-nav-list {
@@ -426,9 +384,13 @@ section {
         }
     }
 
-    p {
-        text-align: center;
-        font-size: 20px;
+    .bottom-footer {
+        p {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 2rem;
+            padding-bottom: 1rem;
+        }
     }
 }
 
